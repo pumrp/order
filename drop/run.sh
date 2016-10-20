@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while ! curl http://db.pumrp.marathon.mesos:27017/
+while ! curl http://${MONGO_HOST}:27017/
 do
   echo "$(date) - still trying"
   sleep 1
